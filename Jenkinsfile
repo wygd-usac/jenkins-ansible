@@ -29,9 +29,9 @@ pipeline {
     }
 
     stage('ImageBuild-Producción') {
-          when {
+          /*when {
             branch 'main'
-          }
+          }*/
           steps {
             echo 'Se ejecutara el deploy en producción.'
             sh 'docker build --no-cache --rm -t wygd/pagina-ansible:latest -f ./Dockerfile .'
