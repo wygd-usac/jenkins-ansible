@@ -1,0 +1,11 @@
+#Construcción de imagen
+docker build --no-cache --rm -t marielosherrera/pareja11:latest
+
+#Publicación de imagen en docker hub
+docker push marielosherrera/pareja11:latest
+
+#Creación de contenedor a partir de la imagen
+sudo docker run -p 8000:8000 marielosherrera/pareja11
+
+#Creación de contenedor usando docker-compose
+docker-compose up

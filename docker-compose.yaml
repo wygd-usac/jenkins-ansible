@@ -1,0 +1,11 @@
+version: '2'
+services:
+  pagina_web:
+    image: wygd/pareja11:latest
+    ports:
+      - "8000:8000"
+    networks:
+      - pagina-network
+networks:
+  pagina-network:
+    driver: bridge
