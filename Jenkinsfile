@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Pull Repository') {
       steps {
-        sh 'echo \'Primer stage\''
+        sh 'ls'
       }
     }
 
