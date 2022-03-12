@@ -1,10 +1,10 @@
---
+---
 - hosts: all
   become: true
   vars:
     create_containers: 1
     default_container_name: pagina
-    default_container_image: wygd/pagina:latest
+    default_container_image: wygd/pagina-ansible:latest
     default_container_command: sleep 1d
 
   tasks:
@@ -37,7 +37,7 @@
         name: "{{ default_container_image }}"
         source: pull
 
-- hosts: pruebas
+- hosts: produccion
   become: true
   vars:
     create_containers: 1
