@@ -54,15 +54,15 @@ pipeline {
     }
 
 
-    /*stage('Deploy-Production') {
-      when {
+    stage('Deploy-Production') {
+      /*when {
         branch 'main'
-      }
+      }*/
       steps {
         sh 'ls -a'
-        sh 'ansible-playbook -i Ansible/inventory.produccion Ansible/docker_deploy_produccion.yaml'
+        sh 'ansible-playbook -i Ansible/inventory.pruebas Ansible/despliegue-pruebas.yaml'
       }
-    }*/
+    }
 
   }
 }
