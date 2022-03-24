@@ -1,0 +1,5 @@
+[pruebas]
+3.138.68.116 ansible_connection=ssh ansible_user=ubuntu
+
+[pruebas:vars]
+ansible_python_interpreter=/usr/bin/python3
